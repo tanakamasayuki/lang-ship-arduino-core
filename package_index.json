@@ -1,0 +1,84 @@
+{
+  "packages": [
+    {
+      "name": "lang-ship",
+      "maintainer": "tanakamasayuki",
+      "websiteURL": "https://github.com/tanakamasayuki/host-arduino-core",
+      "email": "",
+      "help": {
+        "online": "https://github.com/tanakamasayuki/host-arduino-core"
+      },
+      "platforms": [
+        {
+          "name": "Host Arduino Core",
+          "architecture": "host",
+          "version": "0.1.4",
+          "url": "https://github.com/tanakamasayuki/host-arduino-core/releases/download/v0.1.4/host-arduino-core-0.1.4.zip",
+          "archiveFileName": "host-arduino-core-0.1.4.zip",
+          "checksum": "SHA-256:a35d4c3e0b60c8bb7001d0c5f19db97b8a641226538a5c56df1847a22b28e999"
+        },
+        {
+          "name": "Host Arduino Core",
+          "architecture": "host",
+          "version": "0.1.5",
+          "url": "https://github.com/tanakamasayuki/host-arduino-core/releases/download/v0.1.5/host-arduino-core-0.1.5.zip",
+          "archiveFileName": "host-arduino-core-0.1.5.zip",
+          "checksum": "SHA-256:76dce7c2423ba912c526812bfb415411fbb579086ef60cf5f5c3eed543794171"
+        },
+        {
+          "name": "Host Arduino Core",
+          "architecture": "host",
+          "version": "1.0.0",
+          "url": "https://github.com/tanakamasayuki/host-arduino-core/releases/download/v1.0.0/host-arduino-core-1.0.0.zip",
+          "archiveFileName": "host-arduino-core-1.0.0.zip",
+          "checksum": "SHA-256:e1d235dbc6308030c1bc529717b91f23c837cd5d50fb35566c82a2cda134e4f1"
+        },
+        {
+          "name": "Host Arduino Core",
+          "architecture": "host",
+          "version": "1.0.1",
+          "url": "https://github.com/tanakamasayuki/host-arduino-core/releases/download/v1.0.1/host-arduino-core-1.0.1.zip",
+          "archiveFileName": "host-arduino-core-1.0.1.zip",
+          "checksum": "SHA-256:f584016c0305ad85183c5ff307c3cb4949dad6f5c768c51d9c770c5f9ca8a83b"
+        },
+        {
+          "name": "Host Arduino Core",
+          "architecture": "host",
+          "version": "1.0.2",
+          "url": "https://github.com/tanakamasayuki/host-arduino-core/releases/download/v1.0.2/host-arduino-core-1.0.2.zip",
+          "archiveFileName": "host-arduino-core-1.0.2.zip",
+          "checksum": "SHA-256:267f513a1a466d833f07c986a4e4a7151a66c42a748b1274fc56e03c227b5bf7"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "name": "lang-ship",
+      "maintainer": "tanakamasayuki",
+      "websiteURL": "https://github.com/tanakamasayuki/native-arduino-core",
+      "email": "",
+      "help": {
+        "online": "https://github.com/tanakamasayuki/native-arduino-core"
+      },
+      "platforms": [
+        {
+          "name": "Native Arduino Core",
+          "architecture": "native",
+          "version": "0.1.22",
+          "url": "https://github.com/tanakamasayuki/native-arduino-core/releases/download/v0.1.22/native-arduino-core-0.1.22.zip",
+          "archiveFileName": "native-arduino-core-0.1.22.zip",
+          "checksum": "SHA-256:d248b21f5a7f0dc9b25731e6841293fbf3cc57e0634e795631c910c4b04bf5b6"
+        },
+        {
+          "name": "Native Arduino Core",
+          "architecture": "native",
+          "version": "1.0.0",
+          "url": "https://github.com/tanakamasayuki/native-arduino-core/releases/download/v1.0.0/native-arduino-core-1.0.0.zip",
+          "archiveFileName": "native-arduino-core-1.0.0.zip",
+          "checksum": "SHA-256:8bad12bbc91fbad433071188d8052ecb863ecf5546136407d2cb0744bc872218"
+        }
+      ],
+      "tools": []
+    }
+  ]
+}
