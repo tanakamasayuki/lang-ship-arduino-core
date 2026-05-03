@@ -4,6 +4,9 @@ import json
 from pathlib import Path
 
 
+PACKAGE_URL = "https://github.com/tanakamasayuki/lang-ship-arduino-core"
+
+
 def load_index(path: Path) -> dict:
     with path.open(encoding="utf-8") as f:
         data = json.load(f)
@@ -18,10 +21,26 @@ def main() -> None:
     parser.add_argument("indexes", nargs="+", type=Path)
     args = parser.parse_args()
 
-    merged = {"packages": []}
-    for index_path in args.indexes:
-        merged["packages"].extend(load_index(index_path)["packages"])
+    merged_package = {
+        "name": "lang-ship",
+        "maintainer": "tanakamasayuki",
+        "websiteURL": PACKAGE_URL,
+        "email": "",
+        "help": {
+            "online": PACKAGE_URL,
+        },
+        "platforms": [],
+        "tools": [],
+    }
 
+    for index_path in args.indexes:
+        for package in load_index(index_path)["packages"]:
+            platforms = package.get("platforms", [])
+            if not isinstance(platforms, list):
+                raise ValueError(f"{index_path} contains a package without a platforms array")
+            merged_package["platforms"].extend(platforms)
+
+    merged = {"packages": [merged_package]}
     args.output.write_text(
         json.dumps(merged, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
