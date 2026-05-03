@@ -36,20 +36,20 @@ jobs:
         run: |
           set -euo pipefail
           python3 scripts/merge_package_indexes.py \
-            --output package_index.json \
+            --output package_lang-ship_index.json \
             tmp/host-package_index.json \
             tmp/native-package_index.json
 
-      - name: Commit package_index.json
+      - name: Commit package_lang-ship_index.json
         run: |
           set -euo pipefail
           git config user.email "actions@github.com"
           git config user.name "github-actions"
-          git add package_index.json
+          git add package_lang-ship_index.json
           if git diff --staged --quiet; then
-            echo "No package_index.json changes to commit"
+            echo "No package_lang-ship_index.json changes to commit"
           else
-            git commit -m "Update merged package_index.json"
+            git commit -m "Update merged package_lang-ship_index.json"
             git push
           fi
 
@@ -57,7 +57,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p public
-          cp package_index.json public/package_index.json
+          cp package_lang-ship_index.json public/package_lang-ship_index.json
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
